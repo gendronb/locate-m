@@ -23,6 +23,8 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
 ### Example
 
 ```js
+  var locate_m = require('./');
+
   var line = {
       "type": "Feature",
       "geometry": {
@@ -44,7 +46,7 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
       }
   };
 
-  var result = locate-m(line, 15, 'measures');
+  var result = locate_m(line, 15, 'measures');
 
   // { type: 'Feature',
   //        geometry: { type: 'Point', coordinates: [ 45, 15 ] },
