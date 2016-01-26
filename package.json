@@ -1,5 +1,5 @@
 {
-  "name": "locate_m",
+  "name": "locate-m",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gendronb/locate_m.git"
+    "url": "https://github.com/gendronb/locate-m.git"
   },
   "keywords": [
     "turf",
@@ -19,7 +19,7 @@
   "author": "gendronb",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gendronb/locate_m/issues"
+    "url": "https://github.com/gendronb/locate-m/issues"
   },
   "devDependencies": {
     "benchmark": "^1.0.0",

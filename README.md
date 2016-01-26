@@ -1,6 +1,6 @@
-# locate_m
+# locate-m
 
-### `locate_m(Line, Measure, Dimension_Name)`
+### `locate-m(Line, Measure, Dimension_Name)`
 
 Locates a feature along a line by using measures stored as properties ("dimensions") according to Mapbox `geojson-coordinateProperties` proposal (https://github.com/mapbox/geojson-coordinate-properties).
 Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
@@ -44,7 +44,7 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
       }
   };
 
-  var result = locate_m(line, 15, 'measures');
+  var result = locate-m(line, 15, 'measures');
 ```
 ## Tests
 

@@ -21,6 +21,6 @@ var line = {
     }
  };
 
- var result = locate_m(line, 15, 'measures');
+ var result = locate-m(line, 15, 'measures');
 
  console.log('Result = ', result);
