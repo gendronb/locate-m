@@ -15,7 +15,7 @@ test('locate_m', function (t) {
 		{measure: 5, outcome: [15, 0]},
 		{measure: 10, outcome: [30, 0]},
 		{measure: 20, outcome: [60, 60]}
-	]
+	];
 
 	t.throws(function() {locate_m(line, -10, 'times')}, 'Throws if dimension name is not present');
 
@@ -38,9 +38,6 @@ test('locate_m', function (t) {
 
     });
 
-
-
-
-
 	t.end();
+
 });
