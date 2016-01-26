@@ -1,6 +1,4 @@
-var locate_m = require('./');
-
-var line = {
+{
     "type": "Feature",
     "geometry": {
         "type": "LineString",
@@ -16,13 +14,9 @@ var line = {
             "measures": [
                 0,
                 10,
-                15,
+                10,
                 20
             ]
         }
     }
- };
-
- var result = locate_m(line, 0, 'measures');
-
- console.log('Result = ', result);
+ }

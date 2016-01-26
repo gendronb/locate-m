@@ -73,7 +73,7 @@ module.exports = function (line, measure, dimension_name) {
         current_measure = getDimensionValueAtIndex(i);
 
         // Check if measures at increasing...
-        if (current_measure < previous_measure) throw new Error('Dimension value at vertex index ' + i + ' is not increasing...');
+        if (current_measure <= previous_measure) throw new Error('Dimension value at vertex index ' + i + ' is not increasing...');
 
         if (measure < current_measure) {
 
