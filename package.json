@@ -1,0 +1,34 @@
+{
+  "name": "locate_m",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "doc": "dox -r < index.js | doxme --readme > README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gendronb/locate_m.git"
+  },
+  "keywords": [
+    "turf",
+    "linestring",
+    "linear referencing"
+  ],
+  "author": "gendronb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gendronb/locate_m/issues"
+  },
+  "devDependencies": {
+    "benchmark": "^1.0.0",
+    "tape": "^3.5.0",
+    "turf-featurecollection": "^1.0.0",
+    "dox": "^0.6.1",
+    "doxme": "^1.4.3"
+  },
+  "dependencies": {
+    "turf-point": "^2.0.0"
+  }
+}
