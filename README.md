@@ -45,6 +45,12 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
   };
 
   var result = locate-m(line, 15, 'measures');
+
+  // { type: 'Feature',
+  //        geometry: { type: 'Point', coordinates: [ 45, 15 ] },
+  //        properties: {}
+  // }
+
 ```
 ## Tests
 
