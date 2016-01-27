@@ -37,6 +37,7 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one measure at a time.
       },
       "properties": {
           "coordinateProperties": {
+              // this is one dimension...
               "measures": [
                   0,
                   10,
