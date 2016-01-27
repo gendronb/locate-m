@@ -61,7 +61,7 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one measure at a time.
   // }
 
 ```
-**Returns** `Feature.<Point>`.
+**Returns** `Feature.<Point>`. Measure is also returned in `Feature.properties.locate_measure`.
 
 **Returns** `null` if measure is smaller or larger than measures at start or end of line.
 
