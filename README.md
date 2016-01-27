@@ -16,7 +16,7 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one measure at a time.
 | parameter        | type       | description                                               |
 | ---------------- | ---------- | --------------------------------------------------------- |
 | `Line`           | LineString |                                                           |
-| `Measure`        | Number     |                                                           |
+| `Measure`        | Number     | the measure at which to place the resulting feature       |
 | `Dimension_Name` | String     | name of a property ("dimension") in `properties/coordinateProperties`  |                                                      |
 
 
