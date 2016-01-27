@@ -47,6 +47,12 @@ module.exports = function (line, measure, dimension_name) {
         throw new Error('line is missing requested dimension ("' + dimension_name + '")');
     }
 
+    var returnPoint = function(coordinates, measure) {
+
+        return point(coordinates, { locate_measure: measure })
+
+    }
+
     var getDimensionValueAtIndex = function(i) {
 
         var val = dimensions[i];
@@ -91,14 +97,16 @@ module.exports = function (line, measure, dimension_name) {
                 var pt1 = coords[i - 1];
                 var pt2 = coords[i];
                 //console.log(pt1, pt2);
-                return point([((pt2[0] - pt1[0]) * ratio) + pt1[0], ((pt2[1] - pt1[1]) * ratio) + pt1[1]]);
+                //return point([((pt2[0] - pt1[0]) * ratio) + pt1[0], ((pt2[1] - pt1[1]) * ratio) + pt1[1]]);
+                return returnPoint([((pt2[0] - pt1[0]) * ratio) + pt1[0], ((pt2[1] - pt1[1]) * ratio) + pt1[1]], measure);
 
             }
 
         } else if (measure === current_measure) {
 
             // Return current point if its measure is equal to the requested distance
-            return point(coords[i]);
+            //return point(coords[i]);
+            return returnPoint(coords[i], measure);
 
         }
 

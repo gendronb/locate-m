@@ -36,6 +36,7 @@ test('locate_m', function (t) {
 		t.equal(result.type, 'Feature', 'Returned value is a Feature');
 		t.equal(result.geometry.type, 'Point', 'Returned geometry type is a Point');
 		t.deepEqual(result.geometry.coordinates, f.expecting, 'Returns correct point coordinates');
+		t.equal(result.properties.locate_measure, f.measure, 'Returns measure as property');
 
     });
 
