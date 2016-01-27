@@ -55,7 +55,11 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one measure at a time.
   // }
 
 ```
-**Returns** `Feature.<Point>`. Returns `null` if measure is smaller or larger than measures at start or end of line. Throws an `Exception` if dimension is not present in `coordinateProperties`, or if measures are not increasing.
+**Returns** `Feature.<Point>`.
+
+**Returns** `null` if measure is smaller or larger than measures at start or end of line.
+
+**Throws** an `Exception` if dimension is not present in `coordinateProperties`, or if measures are not increasing.
 
 ## Tests
 
