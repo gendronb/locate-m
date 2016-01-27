@@ -2,12 +2,12 @@
 
 ### `locate-m(Line, Measure, Dimension_Name)`
 
-Locates a feature along a line by using measures stored as properties ("dimensions") according to Mapbox `geojson-coordinateProperties` proposal (https://github.com/mapbox/geojson-coordinate-properties).
-Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
+Locates a feature along a line by using measures (eg. timestamp) stored as additional properties ("dimensions"). These dimensions must follow Mapbox's `geojson-coordinateProperties` proposal (https://github.com/mapbox/geojson-coordinate-properties).
+Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one measure at a time.
 
 ### Use Cases
 
-- Locating pictures along a GPX track (X, Y, Z, timestamp) using the "Date and Time" EXIF field.
+- Locating pictures along a GPX track (X, Y, Z, timestamp) using a "Date and Time" EXIF field.
 - Locating incidents along a pipeline or road by using an arbitrary measure system.
 
 
@@ -54,7 +54,7 @@ Similar to `LocateFeaturesAlongRoutes` in ArcGIS, but one feature at a time.
   // }
 
 ```
-**Returns** `Feature.<Point>`. Returns `null` if measure is smaller or larger than measures at start or end of line. Throws an `Exception` if dimension is not present in `coordinateProperties`.
+**Returns** `Feature.<Point>`. Returns `null` if measure is smaller or larger than measures at start or end of line. Throws an `Exception` if dimension is not present in `coordinateProperties`, or if measures are not increasing.
 
 ## Tests
 
