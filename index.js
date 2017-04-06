@@ -30,6 +30,7 @@ var point = require('turf-point');
  *  };
  *
  *  var result = locate_m(line, 15, 'measures');
+ * 
  */
 
 module.exports = function (line, measure, dimension_name) {
